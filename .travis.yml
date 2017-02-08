@@ -12,8 +12,9 @@ android:
         - extra-google-m2repository
         - extra-android-support
         - extra-google-google_play_services
-    script:
-        - ./gradlew assembleRelease
+
+script:
+    - ./gradlew build
 deploy:
     provider: releases
     api_key: afa7ab9fd5fdf2a3909938fcf069428d4b777ecb
