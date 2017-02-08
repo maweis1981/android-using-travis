@@ -17,7 +17,8 @@ script:
     - ./gradlew build
 deploy:
     provider: releases
-    api_key: afa7ab9fd5fdf2a3909938fcf069428d4b777ecb
+    api_key:
+        secure:afa7ab9fd5fdf2a3909938fcf069428d4b777ecb
     file: app/build/outputs/apk/app-release.apk
     skip_cleanup: true
     on:
